@@ -3,7 +3,7 @@
 #set align(center)
 #set image(height: 4cm)
 
-#image("../98_assets/uni.svg")
+#image("/98_assets/uni.svg")
 #v(1cm)
 #text(size: 20pt, weight: "bold",par[#uni])
 #text(size: 16pt ,par[#faculty])

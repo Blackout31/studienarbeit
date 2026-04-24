@@ -6,7 +6,10 @@
 #show figure: set block(above: 30pt, below: 30pt)
 #show heading: set block(above: 30pt, below: 15pt)
 #show ref: abbr.show-rule
-#show heading.where(level: 1): x => pagebreak() + x
+#show heading.where(level: 1): x => {
+  pagebreak(weak: true)
+  x
+}
 
 // Other
 #include "00_other/title_page.typ"

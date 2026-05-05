@@ -1,0 +1,21 @@
+Die Bewertung von _ @AD _verfahren stellt insbesondere im industriellen Umfeld eine zentrale Herausforderung dar. Im Gegensatz zu klassischen Klassifikationsaufgaben ist die Datenlage bei der _ @AD _typischerweise stark unbalanciert, da fehlerhafte Bauteile nur selten auftreten und der überwiegende Teil der verfügbaren Daten aus fehlerfreien Instanzen besteht. Vor diesem Hintergrund ist die Auswahl geeigneter Bewertungsmetriken entscheidend, um die Leistungsfähigkeit unterschiedlicher Verfahren realistisch und vergleichbar beurteilen zu können.
+
+=== Metriken zur Bewertung der Erkennungsleistung
+Zur quantitativen Bewertung der _@AD _werden häufig Metriken herangezogen, die den Zielkonflikt zwischen der Erkennung möglichst vieler Anomalien und der Vermeidung von Fehlalarmen abbilden. Zu den zentralen Kennzahlen zählen _Precision_, _Recall_ sowie der daraus abgeleitete _F1‑Score_. _Precision_ beschreibt den Anteil korrekt erkannter Anomalien an allen als anomal klassifizierten Instanzen, während _Recall_ angibt, welcher Anteil der tatsächlich vorhandenen Anomalien erkannt wurde. Der _F1‑Score_ fasst beide Größen als harmonisches Mittel zusammen und erlaubt eine kompakte Bewertung der Gesamterkennungsleistung.
+
+Darüber hinaus wird häufig die _ @AUROC _ verwendet. Diese Metrik bewertet die Trennschärfe eines Modells über den gesamten Bereich möglicher Schwellwerte hinweg und ist insbesondere bei scorebasierten _ @AD _-verfahren weit verbreitet. Die @AUROC ermöglicht einen schwellwertunabhängigen Vergleich unterschiedlicher Modelle, ist jedoch bei stark unbalancierten Datensätzen nur eingeschränkt interpretierbar.
+
+=== Besonderheiten unbalancierter Datensätze
+Reale industrielle Datensätze zeichnen sich in der Regel durch ein starkes Ungleichgewicht zwischen Normal‑ und Anomaliedaten aus. In solchen Szenarien sind Metriken wie _Accuracy_ nur bedingt aussagekräftig, da bereits triviale Modelle hohe Werte erzielen können, ohne Anomalien zuverlässig zu erkennen. Aus diesem Grund werden in der @AD bevorzugt _Precision‑Recall_‑basierte Metriken eingesetzt, da sie den Fokus explizit auf die Minderheitsklasse legen.
+
+Bei der Interpretation der Ergebnisse ist zudem zu berücksichtigen, dass unterschiedliche industrielle Anwendungsfälle unterschiedliche Anforderungen an die Erkennungsleistung stellen. Während in sicherheitskritischen Anwendungen eine hohe _Recall‑Rate_ zur Vermeidung von Fehlteilen priorisiert werden kann, ist in anderen Szenarien eine hohe _Precision_ entscheidend, um unnötige Ausschleusungen oder manuelle Nachprüfungen zu vermeiden.
+
+=== Benchmarks und reale Industriedaten
+In der Forschung werden _ @AD _-verfahren häufig anhand öffentlicher _Benchmark_‑Datensätze evaluiert, die eine standardisierte Vergleichbarkeit ermöglichen. Diese Datensätze weisen jedoch oftmals idealisierte Eigenschaften auf, etwa eine klare Trennung zwischen Normal‑ und Fehlerdaten oder eine vergleichsweise gleichmäßige Verteilung der Anomalien.
+
+Demgegenüber sind reale industrielle Datensätze durch eine hohe Variabilität, komplexe Störfaktoren sowie eine stark unbalancierte Klassenverteilung gekennzeichnet. Die Übertragbarkeit von Benchmark‑Ergebnissen auf reale Produktionsdaten ist daher nur eingeschränkt gegeben. Entsprechend ist es erforderlich, Bewertungsergebnisse stets im Kontext der zugrunde liegenden Datenbasis zu interpretieren und Unterschiede zwischen synthetischen Benchmarks und realen Industriedaten explizit zu berücksichtigen.
+
+=== Vergleichsrahmen und Bewertungskontext
+Für einen fairen und reproduzierbaren Vergleich unterschiedlicher _ @AD _-verfahren ist neben der Wahl geeigneter Metriken ein konsistenter Vergleichsrahmen erforderlich. Dazu zählen eine einheitliche Datengrundlage, vergleichbare Vorverarbeitungsschritte sowie eine konsistente Aggregation der Anomaliescores, insbesondere bei der Auswertung mehrerer Kameraperspektiven.
+
+Die Auswahl der in dieser Arbeit betrachteten Verfahren erfolgt auf Basis ihrer Eignung für _unsupervised @AD _, ihrer Übertragbarkeit auf mehrperspektivische Bilddaten sowie ihrer praktischen Relevanz für industrielle Anwendungen. Die Bewertung der Modelle erfolgt anhand der beschriebenen Metriken, wobei die Ergebnisse stets im Zusammenhang mit der spezifischen Datenlage und der Zielsetzung der Arbeit interpretiert werden.

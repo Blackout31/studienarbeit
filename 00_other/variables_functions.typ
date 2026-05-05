@@ -9,7 +9,6 @@
 #let professor = "Prof. Dr. rer. nat. Markus Lange-Hegermann"
 #let type_of_work = "Studienarbeit"
 
-
 // functions
 #let over(..args) = grid(columns: args.pos().map(_ => 1fr), inset: (top: 4pt), grid.hline(), ..args)
 #let under(..args) = grid(columns: args.pos().map(_ => 1fr), inset: (bottom: 4pt), ..args, grid.hline())

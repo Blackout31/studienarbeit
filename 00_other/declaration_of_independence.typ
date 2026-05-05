@@ -1,4 +1,5 @@
 #import "variables_functions.typ" : *
+
 #par[Ich erkläre, dass ich die vorliegende #type_of_work selbstständig angefertigt habe.
 Zur Anfertigung der #type_of_work benutzte ich keine anderen als die angegebenen Quellen und Hilfsmittel.]
 #v(1cm)

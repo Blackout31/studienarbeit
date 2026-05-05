@@ -1,14 +1,13 @@
 #import "variables_functions.typ" : *
 
 #set align(center)
-#set image(height: 4cm)
 
-#image("/98_assets/uni.svg")
+#image("../98_assets/uni.svg")
 #v(1cm)
-#text(size: 20pt, weight: "bold",par[#uni])
-#text(size: 16pt ,par[#faculty])
+#text(20pt, weight: "bold",par[#uni])
+#text(16pt ,par[#faculty])
 #v(1cm)
-#text(size: 18pt, weight: "bold", par[#type_of_work])
+#text(18pt, weight: "bold", par[#type_of_work])
 #par[von]
 #par[#author]
 #par[Matr.-Nr.: 2001 8542]

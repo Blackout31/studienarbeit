@@ -1,35 +1,47 @@
+#set par(leading: 0.5em, spacing: 1em, justify: true)
 #set heading(numbering: "1.1",)
 #show heading.where(level: 1): set text(size: 12pt)
 #show heading.where(level: 2): set text(size: 11pt)
 #show heading.where(level: 3): set text(size: 10pt)
 
-#outline(title: "Gliederung")
+#{
+  show outline.entry.where(level: 1): set block(above: 1em)
+  show outline.entry.where(level: 1): set text(weight: "bold")
+ 
+  outline(title: "Gliederung")
+}
+ 
+#heading(numbering: none)[Inhaltsverzeichnis]
+#heading(numbering: none)[Abkürzungsverzeichnis]
+#heading(numbering: none)[Abbildungsverzeichnis]
+#heading(numbering: none)[Tabellenverzeichnis]
 
 = Einleitung
 == Motivation
 == Zielsetzung der Arbeit und Forschungsfrage
 
 = Theoretischer Hintergrund
-== Grundlagen (Anomalieerkennung und Schlüsselbegriffe)
+== Cross-Industry Standard Process for Data Mining
+== Grundlagen
+== Multiview-Bildanalyse
 == Stand der Forschung
-=== Arten von Anomalien (Punkt-, Kontext- und kollektive Anomalien)
-=== Unsupervised Anomalieerkennung (Konzept und Herausforderungen)
-=== Klassische Ansätze (Isolation Forest)
-=== Deep-Learning-basierte Ansätze (Autoencoder, GAN-basierte Methoden, transformerbasierte Methoden)
-=== Multiview-spezifische Ansätze (Fusionsstrategien)
-== Multiview-Bildanalyse (Definition und Konzept)
+=== Anomaliearten in der Forschung
+=== Klassische Ansätze zur Anomalieerkennung
+=== Deep-Learning-basierte Anomalieerkennung
+=== Multi-View-spezifische Ansätze
+=== Zusammenfassung und Forschungslücke
 == Bewertungsmetriken
-=== F1-Score, Precision-Recall, AUROC
-=== Besonderheiten bei unbalancierter Datenlage (wenige Anomalien in realen Datensätzen)
-=== Benchmarks und öffentliche Datensätze im Vergleich zu realen Industriedaten
-=== Datensatz und Vorverarbeitung (Kameraanordnung, Industriedatensätze)
-=== Methodenauswahl und Vergleichsrahmen (Auswahlkriterien der zu vergleichenden Modelle)
+=== Metriken zur Bewertung der Erkennungsleistung
+=== Besonderheiten unbalancierter Datensätze
+=== Benchmarks und reale Industriedaten
+=== Vergleichsrahmen und Bewertungskontext
 
 = Versuchsaufbau und Ergebnisse
-== Versuchsaufbau und Laborumgebung
-== Durchführung
-== Vergleiche (Metriken, Interpretation, Trainingsaufwand/Skalierbarkeit)
-== Diskussion
+== Problemdefinition und Ziele
+== Datensatzbeschreibung
+== Vorverarbeitung und Normalisierung
+== Implementierung verschiedener Modelle
+== Evaluation
 
 = Zusammenfassung und Ausblick
 

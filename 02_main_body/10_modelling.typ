@@ -13,3 +13,5 @@ Ergänzend werden frühere Fusionsstrategien (Early Fusion) konzeptionell eingeo
 Bei der Implementierung der Modelle wird bewusst auf eine spezifische Anpassung an konkrete Fehlerbilder verzichtet. Es werden keine expliziten Fehlerklassen definiert und keine fehlerbezogenen Hyperparameter optimiert. Ziel ist es vielmehr, die Generalisierungsfähigkeit der Ansätze sowie deren Robustheit gegenüber unbekannten Anomalien zu analysieren. Diese bewusste Abstraktion entspricht dem Charakter der Studienarbeit und ermöglicht eine realistische Bewertung der grundsätzlichen Eignung der betrachteten Modellklassen.
 
 Die implementierten Modelle bilden die Grundlage für die im folgenden Abschnitt dargestellte Evaluation. Dabei steht nicht der direkte Leistungsvergleich einzelner Architekturen im Vordergrund, sondern die systematische Analyse methodischer Unterschiede, insbesondere im Hinblick auf die Nutzung mehrperspektivischer Bildinformationen und deren Einfluss auf die Anomalieerkennung im industriellen Umfeld.
+
+// INSERT MODELCOMPARISON <TODO>

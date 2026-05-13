@@ -11,3 +11,5 @@ Ein weiterer wesentlicher Aspekt der Vorverarbeitung ist die strukturierte Organ
 Da der Datensatz überwiegend aus fehlerfreien Bildern besteht, erfolgt im Vorverarbeitungsschritt keine gezielte Selektion oder Entfernung potenzieller Anomalien. Ebenso wird auf eine aggressive Datenbereinigung bewusst verzichtet, um den realen industriellen Charakter der Daten beizubehalten. Ziel ist es, die Bedingungen abzubilden, unter denen das Modell den Normalzustand erlernt und bewertet, und dadurch eine realistische Einschätzung der Robustheit der eingesetzten Verfahren zu ermöglichen.
 
 Die beschriebene Vorverarbeitung bildet die methodische Grundlage für die im folgenden Abschnitt dargestellten Modellierungsansätze. Durch die perspektivkonsistente Normalisierung und strukturierte Organisation der Bilddaten wird sichergestellt, dass Unterschiede in der Anomalieerkennungsleistung primär auf modellseitige Entscheidungen zurückzuführen sind und nicht auf inkonsistente Datenaufbereitung.
+
+// INSERT STEPS <TODO>
